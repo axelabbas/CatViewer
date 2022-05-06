@@ -139,3 +139,33 @@ nav.menu-btn {
   margin: .5em;
   cursor: pointer;
 }
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width:100%;
+    padding: 0;
+  }
+  .navbar var ul {
+    display: flex;
+  }
+  .navbar var a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar var ul.primary-nav {
+    margin: 0;
+  }
+}
